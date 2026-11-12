@@ -201,12 +201,11 @@ function Education() {
 
 function Contact() {
   return <section className="section contact-section" id="contact"><div className="shell contact-shell">
-    <Reveal className="contact-heading"><span className="section-kicker contact-kicker"><span>06</span><span className="kicker-rule"/><span>GET IN TOUCH</span></span><h2>Let's connect<span className="heading-period">.</span></h2><p>Have an opportunity, a project in mind, or just want to say hello?<br/>My inbox is always open.</p></Reveal>
+    <Reveal className="contact-heading"><span className="section-kicker contact-kicker"><span>06</span><span className="kicker-rule"/><span>GET IN TOUCH</span></span><h2>Contact Me<span className="heading-period">.</span></h2></Reveal>
     <div className="contact-cards">
       <Reveal><a className="email-card" href={`mailto:${portfolio.schoolEmail}`} aria-label={`Send email to school address ${portfolio.schoolEmail}`}><span className="email-icon"><Icon name="mail" size={25}/></span><span className="email-body"><span className="email-label">SCHOOL EMAIL</span><span className="email-address">{portfolio.schoolEmail}</span></span><span className="email-arrow"><Icon name="diagonal" size={22}/></span></a></Reveal>
       <Reveal><a className="email-card" href={`mailto:${portfolio.personalEmail}`} aria-label={`Send email to personal address ${portfolio.personalEmail}`}><span className="email-icon"><Icon name="mail" size={25}/></span><span className="email-body"><span className="email-label">PERSONAL EMAIL</span><span className="email-address">{portfolio.personalEmail}</span></span><span className="email-arrow"><Icon name="diagonal" size={22}/></span></a></Reveal>
     </div>
-    <Reveal className="contact-below"><span>LET'S MAKE SOMETHING GREAT.</span><span>AVAILABLE FOR CONVERSATION <span className="little-green-dot"/></span></Reveal>
   </div></section>;
 }
 

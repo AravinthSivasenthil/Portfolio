@@ -29,7 +29,7 @@ A workflow is included at `.github/workflows/deploy.yml`. On a push to `main`, G
 3. The initial site is available on `https://AravinthSivasenthil.github.io/Portfolio/` only after Pages is enabled. The permanent domain setup is a separate step.
 4. To connect the purchased `aravinth.ca` domain later, set it under **Settings → Pages → Custom domain** and configure the domain's DNS at Porkbun. Wait for DNS propagation, then enable **Enforce HTTPS** when GitHub offers it.
 
-**Important:** This Vite project uses a dynamic Vite `base` setting. The GitHub Actions build automatically uses `/Portfolio/` for the temporary project Pages URL. When `aravinth.ca` is connected later, set `SITE_BASE_PATH: '/'` on the workflow's **Build React website** step; this switches the output to the custom domain root.
+**Important:** Vite is configured with `base: './'`, so the site can be previewed at the project's GitHub Pages URL and later moved to the custom domain without editing asset paths.
 
 ## Notes
 
